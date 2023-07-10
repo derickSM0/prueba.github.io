@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+          x=prompt ('introduce un numero') //la variable no esta definida
+ try{                                       
+    if(x=="")throw "is Empty";
+    if(isNaN(x))throw "not a number";
+ if(x>10)throw "too high";
+ if(x<5)throw "too low";
+ }
+ catch(err){
+    document.writeln("Input " + err);//Aqui esta mal el document.write y tambien le falta la coma que separa las variables 
+ }
+ finally{
+    document.write("El statement esta listo")
+ }
+    </script>
+    </body>
+</html>
